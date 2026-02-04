@@ -1,38 +1,397 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+.wedding-invitation {
+  max-width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #fff5f5 0%, #ffffff 50%, #fff5f5 100%);
+  min-height: 100vh;
+  font-family: 'Nanum Myeongjo', 'Noto Serif KR', serif;
+  color: #4a4a4a;
+  overflow-x: hidden;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+  padding: 60px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffeef7 0%, #fff5f5 100%);
+  position: relative;
+}
+
+.decorative-top,
+.decorative-bottom {
+  font-size: 24px;
+  color: #e8b4c8;
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.couple-names {
+  font-size: 32px;
+  font-weight: 400;
+  color: #8b5a7a;
+  margin: 30px 0;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.wedding-date {
+  margin: 30px 0;
+}
+
+.date-text {
+  font-size: 16px;
+  color: #6b5b6b;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* 인사말 섹션 */
+.greeting-section {
+  padding: 50px 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greeting-content {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(232, 180, 200, 0.15);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.greeting-text {
+  font-size: 15px;
+  line-height: 2.2;
+  color: #5a5a5a;
+  font-weight: 300;
+  white-space: pre-line;
+}
+
+/* 부모님 섹션 */
+.parents-section {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.parents-info {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(232, 180, 200, 0.1);
+}
+
+.groom-parents,
+.bride-parents {
+  margin: 25px 0;
+}
+
+.parents-label {
+  font-size: 14px;
+  color: #8b5a7a;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.parents-name {
+  font-size: 15px;
+  color: #6b5b6b;
+  line-height: 1.8;
+}
+
+/* 장소 섹션 */
+.location-section {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.location-content {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(232, 180, 200, 0.1);
+}
+
+.section-title {
+  font-size: 20px;
+  color: #8b5a7a;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.venue-info {
+  margin: 20px 0;
+}
+
+.venue-name {
+  font-size: 18px;
+  color: #6b5b6b;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.venue-address,
+.venue-phone {
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 1.8;
+  margin: 5px 0;
+}
+
+.map-button {
+  margin-top: 25px;
+}
+
+.map-button button {
+  background: linear-gradient(135deg, #e8b4c8 0%, #d4a5b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(232, 180, 200, 0.3);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.map-button button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(232, 180, 200, 0.3);
+}
+
+/* 푸터 섹션 */
+.footer-section {
+  padding: 50px 30px 60px;
+  text-align: center;
+}
+
+.footer-decorative {
+  font-size: 20px;
+  color: #e8b4c8;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  letter-spacing: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #8b8b8b;
+  font-weight: 300;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 480px) {
+  .couple-names {
+    font-size: 28px;
+  }
+
+  .greeting-content,
+  .parents-info,
+  .location-content {
+    padding: 30px 20px;
+  }
+
+  .greeting-text {
+    font-size: 14px;
+  }
+
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .modal-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+  }
+
+  .modal-prev {
+    left: 10px;
+  }
+
+  .modal-next {
+    right: 10px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 28px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 사진 앨범 섹션 */
+.album-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.album-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.album-item {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 비율 유지 */
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(232, 180, 200, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #f8f8f8;
+  will-change: transform;
+  contain: layout style paint;
+}
+
+.album-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(232, 180, 200, 0.4);
+}
+
+.album-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* 이미지 모달 */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  line-height: 1;
+  padding: 0;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modal-counter {
   color: white;
+  margin-top: 15px;
+  font-size: 16px;
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  line-height: 1;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-nav:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+.modal-nav:active {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.modal-prev {
+  left: 20px;
+}
+
+.modal-next {
+  right: 20px;
+}
+
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
 }
