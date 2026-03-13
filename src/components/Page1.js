@@ -221,26 +221,27 @@ function Page1() {
   };
 
   return (
-    <div className="max-w-full mx-auto bg-white min-h-screen font-wedding text-[#4a4a4a] overflow-x-hidden relative">
-        {!hidePhaserSection && (
-          <section className="h-screen flex items-center justify-center bg-[#1a1a2e]">
-            <PhaserGame ref={phaserRef} currentActiveScene={onCurrentActiveScene} />
-            {showButton && (
-              <button
-                onClick={scrollToNextSection}
-                className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-2/3 max-w-md bg-white/90 text-[#8b5a7a] py-3 px-6 rounded-full text-base font-normal shadow-[0_4px_20px_rgba(139,90,122,0.3)] transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95 font-neodgm"
-              >
-                모바일 청첩장 보러가기
-              </button>
-            )}
-          </section>
-        )}
-        <section className="relative h-screen bg-slate-50 flex-col items-center justify-center overflow-hidden">
-          <div className="flex items-center justify-center mt-2 w-full">
+    <div className="max-w-full mx-auto bg-white h-full font-wedding text-[#4a4a4a] overflow-x-hidden relative">
+      {!hidePhaserSection && (
+        <section className="h-screen flex items-center justify-center bg-[#1a1a2e]">
+          <PhaserGame ref={phaserRef} currentActiveScene={onCurrentActiveScene} />
+          {showButton && (
+            <button
+              onClick={scrollToNextSection}
+              className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-2/3 max-w-md bg-white/90 text-[#8b5a7a] py-3 px-6 rounded-full text-base font-normal shadow-[0_4px_20px_rgba(139,90,122,0.3)] transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95 font-neodgm"
+            >
+              모바일 청첩장 보러가기
+            </button>
+          )}
+        </section>
+      )}
+      <section className="h-full bg-slate-50 flex-col overflow-hidden">
+        <div className="h-full flex flex-col justify-center">
+          <div className="flex items-center justify-center w-full">
             <img
               src={main1}
               alt="사진"
-              className="object-cover w-[110%] max-w-[500px] h-[75%] rounded-lg"
+              className="object-cover w-[110%] max-w-[500px] h-full rounded-lg"
             />
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -251,289 +252,290 @@ function Page1() {
               수원 파티웨딩유
             </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* 메인 헤더 및 인사말 */}
-        <section className="h-screen flex pt-1 px-5 pb-5 text-center bg-[#faf6ed] relative ">
-          <div className="max-w-[500px] mx-auto mt-16">
-            <h1 className="text-2xl text-black mb-3 font-normal font-neodgm">
-              우리 결혼해요💍
-            </h1>
+      {/* 메인 헤더 및 인사말 */}
+      <section className="h-full flex pt-1 px-5 pb-5 text-center bg-[#faf6ed] relative ">
+        <div className="max-w-[500px] mx-auto mt-16 h-full">
+          <h1 className="text-2xl text-black mb-3 font-normal font-neodgm">
+            우리 결혼해요💍
+          </h1>
 
-            <p className="mt-10 text-[15px] leading-[2.2] text-[#5a5a5a] font-light whitespace-pre-line max-[480px]:text-sm font-neodgm">
-              스무 살, 친구로 만나<br />
-              서른 살, 연인이 된 저희가<br />
-              이제 서로의 곁에서<br />
-              영원한 행복을 약속하려 합니다.<br />
-              <br />
-              게임 오버 없는 사랑의 여정<br />
-              두 사람의 이야기가 이제 시작합니다.<br />
-              <br />
-              소중한 걸음으로 함께하시어<br />
-              저희의 새로운 시작을 <br />
-              축복해 주시면 감사하겠습니다.<br />
-            </p>
+          <p className="mt-10 text-[15px] leading-[2.2] text-[#5a5a5a] font-light whitespace-pre-line max-[480px]:text-sm font-neodgm">
+            스무 살, 친구로 만나<br />
+            서른 살, 연인이 된 저희가<br />
+            이제 서로의 곁에서<br />
+            영원한 행복을 약속하려 합니다.<br />
+            <br />
+            게임 오버 없는 사랑의 여정<br />
+            두 사람의 이야기가 이제 시작합니다.<br />
+            <br />
+            소중한 걸음으로 함께하시어<br />
+            저희의 새로운 시작을 <br />
+            축복해 주시면 감사하겠습니다.<br />
+          </p>
 
-            {/* 부모님 이름 */}
-            <div className="mt-14 px-5 max-w-xs mx-auto">
-              <div className="mt-1 flex items-baseline">
-                <p className="text-[15px] text-[#8b5a7a] font-medium w-12 flex-shrink-0">신랑</p>
-                <p className="text-[15px] text-[#6b5b6b] leading-[1.8]">상우 · 은이의</p>
-                <p className="text-[15px] text-[#6b5b6b] leading-[1.8] ml-2">아들</p>
-                <p className="text-[15px] text-[#6b5b6b] font-bold ml-4">욱</p>
-              </div>
-              <div className="mt-2 flex items-baseline">
-                <p className="text-[15px] text-[#8b5a7a] font-medium w-12 flex-shrink-0">신부</p>
-                <p className="text-[15px] text-[#6b5b6b] leading-[1.8]">정규 · 옥자의</p>
-                <p className="text-[15px] text-[#6b5b6b] leading-[1.8] ml-2">딸</p>
-                <p className="text-[15px] text-[#6b5b6b] font-bold ml-4">진희</p>
-              </div>
+          {/* 부모님 이름 */}
+          <div className="mt-14 px-5 max-w-xs mx-auto">
+            <div className="mt-1 flex items-baseline">
+              <p className="text-[15px] text-[#8b5a7a] font-medium w-12 flex-shrink-0">신랑</p>
+              <p className="text-[15px] text-[#6b5b6b] leading-[1.8]">상우 · 은이의</p>
+              <p className="text-[15px] text-[#6b5b6b] leading-[1.8] ml-2">아들</p>
+              <p className="text-[15px] text-[#6b5b6b] font-bold ml-4">욱</p>
+            </div>
+            <div className="mt-2 flex items-baseline">
+              <p className="text-[15px] text-[#8b5a7a] font-medium w-12 flex-shrink-0">신부</p>
+              <p className="text-[15px] text-[#6b5b6b] leading-[1.8]">정규 · 옥자의</p>
+              <p className="text-[15px] text-[#6b5b6b] leading-[1.8] ml-2">딸</p>
+              <p className="text-[15px] text-[#6b5b6b] font-bold ml-4">진희</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
 
-        {/* 사진 앨범 */}
-        <section className="min-h-screen py-16 px-5 text-center bg-white">
-          <div className="max-w-[500px] mx-auto">
-            <h2 className="text-2xl text-black mb-1 font-normal font-neodgm">사진 앨범</h2>
-            <div className="py-1 w-full">
-              <ImageGallery
-                ref={galleryRef}
-                items={galleryImages}
-                showPlayButton={false}
-                showFullscreenButton={false}
-                useBrowserFullscreen={false}
-                showNav={false}
-                showIndex={true}
-                showThumbnails={true}
-                lazyLoad={true}
-                slideDuration={100}
-                onSlide={(currentIndex) => setCurrentSlideIndex(currentIndex)}
-                onClick={() => openModal(currentSlideIndex)}
+      {/* 사진 앨범 */}
+      <section className="h-full py-16 px-5 text-center bg-white">
+        <div className="max-w-[500px] mx-auto h-full">
+          <h2 className="text-2xl text-black mb-1 font-normal font-neodgm">사진 앨범</h2>
+          <div className="py-1 w-full h-full">
+            <ImageGallery
+              ref={galleryRef}
+              items={galleryImages}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              useBrowserFullscreen={false}
+              showNav={false}
+              showIndex={true}
+              showThumbnails={true}
+              lazyLoad={true}
+              slideDuration={100}
+              onSlide={(currentIndex) => setCurrentSlideIndex(currentIndex)}
+              onClick={() => openModal(currentSlideIndex)}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 장소 정보 */}
+      <section className="h-full flex items-center justify-center py-5 px-5 text-center overflow-hidden bg-[#faf6ed]">
+        <div className="max-w-[500px] mx-auto  py-3 px-6 max-[480px]:py-8 max-[480px]:px-5">
+          <h2 className="text-xl text-black mb-3 font-normal font-neodgm">오시는 길</h2>
+          <div className="my-1">
+            <p className="text-lg text-black font-medium">수원 파티웨딩유</p>
+            <p className="text-sm text-black leading-[1.8]"> 경기도 수원시 권선구 세화로 218</p>
+          </div>
+
+          {/* 오시는 방법 이미지 */}
+          <div className="mt-3 -mx-4">
+            <div className="overflow-hidden rounded-[15px] shadow-[0_3px_15px_rgba(0,0,0,0.12)]">
+              <img
+                src={mapInner}
+                alt="수원 파티웨딩유 오시는 방법 안내"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
-        </section>
 
-        {/* 장소 정보 */}
-        <section className="h-screen flex items-center justify-center py-5 px-5 text-center overflow-hidden bg-[#faf6ed]">
-          <div className="max-w-[500px] mx-auto  py-3 px-6 max-[480px]:py-8 max-[480px]:px-5">
-            <h2 className="text-xl text-black mb-3 font-normal font-neodgm">오시는 길</h2>
-            <div className="my-1">
-              <p className="text-lg text-black font-medium">수원 파티웨딩유</p>
-              <p className="text-sm text-black leading-[1.8]"> 경기도 수원시 권선구 세화로 218</p>
-            </div>
-
-            {/* 오시는 방법 이미지 */}
-            <div className="mt-3 -mx-4">
-              <div className="overflow-hidden rounded-[15px] shadow-[0_3px_15px_rgba(0,0,0,0.12)]">
-                <img
-                  src={mapInner}
-                  alt="수원 파티웨딩유 오시는 방법 안내"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </div>
-
-            {/* 오시는 방법 텍스트 */}
-            <div className="mt-6 text-left text-sm text-[#5a5a5a] leading-relaxed space-y-1">
-              <div>
-                <p className="font-medium text-[#8b5a7a] mb-1">셔틀버스</p>
-                <p>수원역 지하상가 13번 출구 공항 리무진버스 정류장에서 탑승</p>
-              </div>
-              <div>
-                <p className="font-medium text-[#8b5a7a] mb-1">자가용</p>
-                <p>네비게이션에 &quot;파티웨딩유&quot; 또는 &quot;0312971000&quot; 을 입력해 주세요.</p>
-              </div>
-            </div>
-
-            {/* 지도 링크 버튼 */}
-            <div className="mt-6 flex justify-center gap-3">
-              <a
-                href="https://naver.me/GIIlhUYk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#03c75a] text-white py-3 px-4 rounded-[25px] text-sm cursor-pointer shadow-[0_4px_15px_rgba(0,0,0,0.15)] transition-all duration-300 font-inherit active:scale-95"
-              >
-                네이버 지도
-              </a>
-              <a
-                href="https://kko.to/dTofpeDo17"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#ffe812] text-[#3c1e1e] py-3 px-4 rounded-[25px] text-sm cursor-pointer shadow-[0_4px_15px_rgba(0,0,0,0.15)] transition-all duration-300 font-inherit active:scale-95"
-              >
-                카카오 지도
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* 마음 전하실 곳 */}
-        <section className="min-h-screen flex items-center justify-center py-16 px-8 bg-white">
-          <div className="max-w-[500px] w-full">
-            <h3 className="text-2xl mb-2 text-center font-light tracking-[3px] text-black font-neodgm">
-              마음 전하실 곳
-            </h3>
-            <div className="text-xl text-[#e8b4c8] mb-8 opacity-60 tracking-[10px] text-center">
-              ❀ ❀ ❀
-            </div>
-
-            {/* 신랑측 */}
-            <div className="mb-8">
-              <h4 className="text-lg mb-4 text-center font-light tracking-[2px] text-[#6b6b6b]">
-                신랑측
-              </h4>
-              <div className="space-y-3">
-                {/* 송욱 */}
-                <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleAccordion('songwook')}
-                    className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
-                  >
-                    <span className="text-base text-[#6b6b6b]">[신랑] 송욱</span>
-                    <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['songwook'] ? 'rotate-180' : ''}`}>
-                      ▼
-                    </span>
-                  </button>
-                  {openAccordions['songwook'] && (
-                    <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
-                      <p className="text-sm text-[#6b6b6b]">신한 110-353-906870</p>
-                      <button
-                        onClick={() => copyToClipboard('110-353-906870', '송욱')}
-                        className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
-                      >
-                        복사
-                      </button>
-                    </div>
-                  )}
-                </div>
-
-                {/* 이은이 */}
-                <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleAccordion('euny')}
-                    className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
-                  >
-                    <span className="text-base text-[#6b6b6b">[모] 이은이</span>
-                    <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['euny'] ? 'rotate-180' : ''}`}>
-                      ▼
-                    </span>
-                  </button>
-                  {openAccordions['euny'] && (
-                    <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
-                      <p className="text-sm text-[#6b6b6b]">우리 1002-031-875482</p>
-                      <button
-                        onClick={() => copyToClipboard('1002-031-875482', '이은이')}
-                        className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
-                      >
-                        복사
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 신부측 */}
+          {/* 오시는 방법 텍스트 */}
+          <div className="mt-6 text-left text-sm text-[#5a5a5a] leading-relaxed space-y-1">
             <div>
-              <h4 className="text-lg mb-4 text-center font-light tracking-[2px] text-[#6b6b6b]">
-                신부측
-              </h4>
-              <div className="space-y-3">
-                {/* 김진희 */}
-                <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleAccordion('jinhee')}
-                    className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
-                  >
-                    <span className="text-base text-[#6b6b6b]">[신부] 김진희</span>
-                    <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['jinhee'] ? 'rotate-180' : ''}`}>
-                      ▼
-                    </span>
-                  </button>
-                  {openAccordions['jinhee'] && (
-                    <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
-                      <p className="text-sm text-[#6b6b6b]">카카오뱅크 3333-04-3954135</p>
-                      <button
-                        onClick={() => copyToClipboard('3333-04-3954135', '김진희')}
-                        className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
-                      >
-                        복사
-                      </button>
-                    </div>
-                  )}
-                </div>
+              <p className="font-medium text-[#8b5a7a] mb-1">셔틀버스</p>
+              <p>수원역 지하상가 13번 출구 공항 리무진버스 정류장에서 탑승</p>
+            </div>
+            <div>
+              <p className="font-medium text-[#8b5a7a] mb-1">자가용</p>
+              <p>네비게이션에 &quot;파티웨딩유&quot; 또는 &quot;0312971000&quot; 을 입력해 주세요.</p>
+            </div>
+          </div>
 
-                {/* 김정규(김진완) */}
-                <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleAccordion('jeonggyu')}
-                    className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
-                  >
-                    <span className="text-base text-[#6b6b6b]">[부] 김정규(김진완)</span>
-                    <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['jeonggyu'] ? 'rotate-180' : ''}`}>
-                      ▼
-                    </span>
-                  </button>
-                  {openAccordions['jeonggyu'] && (
-                    <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
-                      <p className="text-sm text-[#6b6b6b]">농협 352-0695-6101-93</p>
-                      <button
-                        onClick={() => copyToClipboard('352-0695-6101-93', '김진완')}
-                        className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
-                      >
-                        복사
-                      </button>
-                    </div>
-                  )}
-                </div>
+          {/* 지도 링크 버튼 */}
+          <div className="mt-6 flex justify-center gap-3">
+            <a
+              href="https://naver.me/GIIlhUYk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#03c75a] text-white py-3 px-4 rounded-[25px] text-sm cursor-pointer shadow-[0_4px_15px_rgba(0,0,0,0.15)] transition-all duration-300 font-inherit active:scale-95"
+            >
+              네이버 지도
+            </a>
+            <a
+              href="https://kko.to/dTofpeDo17"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#ffe812] text-[#3c1e1e] py-3 px-4 rounded-[25px] text-sm cursor-pointer shadow-[0_4px_15px_rgba(0,0,0,0.15)] transition-all duration-300 font-inherit active:scale-95"
+            >
+              카카오 지도
+            </a>
+          </div>
+        </div>
+      </section>
 
-                {/* 김옥자 */}
-                <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleAccordion('okja')}
-                    className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
-                  >
-                    <span className="text-base text-[#6b6b6b">[모] 김옥자</span>
-                    <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['okja'] ? 'rotate-180' : ''}`}>
-                      ▼
-                    </span>
-                  </button>
-                  {openAccordions['okja'] && (
-                    <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
-                      <p className="text-sm text-[#6b6b6b]">신한 110-230-047184</p>
-                      <button
-                        onClick={() => copyToClipboard('110-230-047184', '김옥자')}
-                        className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
-                      >
-                        복사
-                      </button>
-                    </div>
-                  )}
-                </div>
+      {/* 마음 전하실 곳 */}
+      <section className="h-full flex items-center justify-center py-16 px-8 bg-white">
+        <div className="max-w-[500px] w-full">
+          <h3 className="text-2xl mb-2 text-center font-light tracking-[3px] text-black font-neodgm">
+            마음 전하실 곳
+          </h3>
+          <div className="text-xl text-[#e8b4c8] mb-8 opacity-60 tracking-[10px] text-center">
+            ❀ ❀ ❀
+          </div>
+
+          {/* 신랑측 */}
+          <div className="mb-8">
+            <h4 className="text-lg mb-4 text-center font-light tracking-[2px] text-[#6b6b6b]">
+              신랑측
+            </h4>
+            <div className="space-y-3">
+              {/* 송욱 */}
+              <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion('songwook')}
+                  className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
+                >
+                  <span className="text-base text-[#6b6b6b]">[신랑] 송욱</span>
+                  <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['songwook'] ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </button>
+                {openAccordions['songwook'] && (
+                  <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
+                    <p className="text-sm text-[#6b6b6b]">신한 110-353-906870</p>
+                    <button
+                      onClick={() => copyToClipboard('110-353-906870', '송욱')}
+                      className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
+                    >
+                      복사
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {/* 이은이 */}
+              <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion('euny')}
+                  className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
+                >
+                  <span className="text-base text-[#6b6b6b">[모] 이은이</span>
+                  <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['euny'] ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </button>
+                {openAccordions['euny'] && (
+                  <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
+                    <p className="text-sm text-[#6b6b6b]">우리 1002-031-875482</p>
+                    <button
+                      onClick={() => copyToClipboard('1002-031-875482', '이은이')}
+                      className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
+                    >
+                      복사
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </div>
-        </section>
 
-        {/* 하단 장식 */}
-        <section className="h-screen flex items-center justify-center py-12 px-8 pb-16 text-center bg-[#faf6ed]">
+          {/* 신부측 */}
           <div>
-            <img src={kiss} alt="장식" className="w-48 h-48 mx-auto mb-8 object-contain" />
-            <div className="text-xl text-[#e8b4c8] mb-5 opacity-60 tracking-[10px]">❀ ❀ ❀</div>
-            <p className="text-sm text-black font-light mb-8 font-neodgm">결혼을 축하해주셔서 감사합니다.</p>
+            <h4 className="text-lg mb-4 text-center font-light tracking-[2px] text-[#6b6b6b]">
+              신부측
+            </h4>
+            <div className="space-y-3">
+              {/* 김진희 */}
+              <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion('jinhee')}
+                  className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
+                >
+                  <span className="text-base text-[#6b6b6b]">[신부] 김진희</span>
+                  <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['jinhee'] ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </button>
+                {openAccordions['jinhee'] && (
+                  <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
+                    <p className="text-sm text-[#6b6b6b]">카카오뱅크 3333-04-3954135</p>
+                    <button
+                      onClick={() => copyToClipboard('3333-04-3954135', '김진희')}
+                      className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
+                    >
+                      복사
+                    </button>
+                  </div>
+                )}
+              </div>
 
+              {/* 김정규(김진완) */}
+              <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion('jeonggyu')}
+                  className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
+                >
+                  <span className="text-base text-[#6b6b6b]">[부] 김정규(김진완)</span>
+                  <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['jeonggyu'] ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </button>
+                {openAccordions['jeonggyu'] && (
+                  <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
+                    <p className="text-sm text-[#6b6b6b]">농협 352-0695-6101-93</p>
+                    <button
+                      onClick={() => copyToClipboard('352-0695-6101-93', '김진완')}
+                      className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
+                    >
+                      복사
+                    </button>
+                  </div>
+                )}
+              </div>
 
-            <button
-              onClick={shareURL}
-              className="bg-[#e8b4c8] text-white py-3 px-6 rounded-full text-sm cursor-pointer shadow-[0_4px_15px_rgba(232,180,200,0.3)] transition-all duration-300 hover:bg-[#d89bb5] hover:shadow-[0_6px_20px_rgba(232,180,200,0.4)] active:scale-95 font-neodgm"
-            >
-              모바일 청첩장 공유하기
-            </button>
+              {/* 김옥자 */}
+              <div className="border border-[#e8b4c8]/30 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleAccordion('okja')}
+                  className="w-full px-5 py-4 text-left bg-white hover:bg-[#fef9fb] transition-colors duration-200 flex justify-between items-center"
+                >
+                  <span className="text-base text-[#6b6b6b">[모] 김옥자</span>
+                  <span className={`text-[#e8b4c8] text-xl transition-transform duration-300 ${openAccordions['okja'] ? 'rotate-180' : ''}`}>
+                    ▼
+                  </span>
+                </button>
+                {openAccordions['okja'] && (
+                  <div className="px-5 py-4 bg-[#fef9fb] border-t border-[#e8b4c8]/20 flex items-center justify-between">
+                    <p className="text-sm text-[#6b6b6b]">신한 110-230-047184</p>
+                    <button
+                      onClick={() => copyToClipboard('110-230-047184', '김옥자')}
+                      className="text-xs bg-[#e8b4c8] text-white py-2 px-4 rounded-full hover:bg-[#d89bb5] transition-colors duration-200 whitespace-nowrap"
+                    >
+                      복사
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
+
+      {/* 하단 장식 */}
+      <section className="h-full flex items-center justify-center py-12 px-8 pb-16 text-center bg-[#faf6ed]">
+        <div>
+          <img src={kiss} alt="장식" className="w-48 h-48 mx-auto mb-8 object-contain" />
+          <div className="text-xl text-[#e8b4c8] mb-5 opacity-60 tracking-[10px]">❀ ❀ ❀</div>
+          <p className="text-sm text-black font-light mb-8 font-neodgm">결혼을 축하해주셔서 감사합니다.</p>
+
+
+          <button
+            onClick={shareURL}
+            className="bg-[#e8b4c8] text-white py-3 px-6 rounded-full text-sm cursor-pointer shadow-[0_4px_15px_rgba(232,180,200,0.3)] transition-all duration-300 hover:bg-[#d89bb5] hover:shadow-[0_6px_20px_rgba(232,180,200,0.4)] active:scale-95 font-neodgm"
+          >
+            모바일 청첩장 공유하기
+          </button>
+        </div>
+      </section>
 
       {/* 이미지 확대 모달 */}
       {selectedImage !== null && (
@@ -565,7 +567,7 @@ function Page1() {
               {webpPaths.map((path, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-screen h-screen flex flex-col items-center justify-center px-5"
+                  className="flex-shrink-0 w-screen h-full flex flex-col items-center justify-center px-5"
                 >
                   <img
                     src={path}
