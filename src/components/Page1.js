@@ -254,7 +254,7 @@ function Page1() {
         </section>
 
         {/* 메인 헤더 및 인사말 */}
-        <section className="h-[570px] flex pt-1 px-5 pb-5 text-center bg-[#faf6ed] relative ">
+        <section className="h-screen flex pt-1 px-5 pb-5 text-center bg-[#faf6ed] relative ">
           <div className="max-w-[500px] mx-auto mt-16">
             <h1 className="text-2xl text-black mb-3 font-normal font-neodgm">
               우리 결혼해요💍
