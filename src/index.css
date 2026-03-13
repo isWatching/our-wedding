@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'NeoDunggeunmo';
+  src: url('./fonts/neodgm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply box-border;
@@ -9,6 +16,12 @@
 
   html {
     @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .font-neodgm {
+    font-family: 'NeoDunggeunmo', monospace;
   }
 }
 
@@ -26,4 +39,54 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* react-image-gallery 커스텀 스타일 */
+.image-gallery-slide {
+  height: 60vh !important;
+  min-height: 60vh !important;
+}
+
+.image-gallery-slide .image-gallery-image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
+.image-gallery-image img {
+  max-height: 60vh !important;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.image-gallery-thumbnails-wrapper {
+  margin-top: 20px !important;
+}
+
+.image-gallery-thumbnail {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  height: 80px !important;
+  object-fit: cover !important;
+}
+
+/* 풀스크린 모드 스타일 */
+.image-gallery.fullscreen-modal {
+  background: black !important;
+}
+
+.image-gallery.fullscreen-modal .image-gallery-slide {
+  height: 100vh !important;
+  min-height: 100vh !important;
+}
+
+.image-gallery.fullscreen-modal .image-gallery-image img {
+  max-height: 90vh !important;
+  max-width: 90vw !important;
 }
