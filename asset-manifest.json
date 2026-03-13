@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.1d93a9cf.css",
-    "main.js": "/our-wedding/static/js/main.52216d29.js",
+    "main.css": "/our-wedding/static/css/main.984e1ffa.css",
+    "main.js": "/our-wedding/static/js/main.0d608285.js",
     "static/js/453.c95b8273.chunk.js": "/our-wedding/static/js/453.c95b8273.chunk.js",
     "static/media/20-VATA1391_수정본.webp": "/our-wedding/static/media/20-VATA1391_수정본.856e1c201ef1ab32a8c3.webp",
     "static/media/2-VATA1349_2차수정본.webp": "/our-wedding/static/media/2-VATA1349_2차수정본.86132fd673aa3d84d2be.webp",
@@ -47,6 +47,7 @@
     "static/media/10-VATA1168_수정본.webp": "/our-wedding/static/media/10-VATA1168_수정본.bbd55d5e293dd67dacba.webp",
     "static/media/23-VATA1899_수정본.webp": "/our-wedding/static/media/23-VATA1899_수정본.a89e89902519f8bc50a5.webp",
     "static/media/56-VATA0833_수정본.webp": "/our-wedding/static/media/56-VATA0833_수정본.1c4cbb1f4f91a8512614.webp",
+    "static/media/weddingDay.png": "/our-wedding/static/media/weddingDay.f78bb7d839d15c81a0f4.png",
     "static/media/5-VATA0524_3차수정본.webp": "/our-wedding/static/media/5-VATA0524_3차수정본.5773996078b69da3694a.webp",
     "static/media/45-VATA2224_2차수정본_2.jpg": "/our-wedding/static/media/45-VATA2224_2차수정본_2.f21909cfc46d9b1f2c45.jpg",
     "static/media/14-VATA1727 파란하늘_2차수정본_5.jpg": "/our-wedding/static/media/14-VATA1727 파란하늘_2차수정본_5.bc090703266fa8efa7d4.jpg",
@@ -55,6 +56,7 @@
     "static/media/4-VATA0508_2차수정본.webp": "/our-wedding/static/media/4-VATA0508_2차수정본.e2b6b83011bd38662bfe.webp",
     "static/media/32-VATA1670_수정본.webp": "/our-wedding/static/media/32-VATA1670_수정본.0c5926f3a6cddce710a4.webp",
     "static/media/41-VATA0405_2차수정본.webp": "/our-wedding/static/media/41-VATA0405_2차수정본.12e8057871c6d7c2250d.webp",
+    "static/media/main1.png": "/our-wedding/static/media/main1.3ebe4afee4e8be7a2269.png",
     "static/media/15-VATA1833 파란하늘_수정본_1.jpg": "/our-wedding/static/media/15-VATA1833 파란하늘_수정본_1.00e0acee6828a72e63e7.jpg",
     "static/media/52-VATA0408_2차수정본.webp": "/our-wedding/static/media/52-VATA0408_2차수정본.4fb580923c4b44ede262.webp",
     "static/media/50-VATA2298_2차수정본_2.jpg": "/our-wedding/static/media/50-VATA2298_2차수정본_2.6c94cc15afd7153d0a56.jpg",
@@ -101,6 +103,7 @@
     "static/media/56-VATA0833_수정본_2.jpg": "/our-wedding/static/media/56-VATA0833_수정본_2.ccab021adfd4bed0597e.jpg",
     "static/media/55-VATA0853_수정본_1.jpg": "/our-wedding/static/media/55-VATA0853_수정본_1.e620daf63d55e6aa37e9.jpg",
     "static/media/30-VATA0558_수정본_2.jpg": "/our-wedding/static/media/30-VATA0558_수정본_2.481629043cdc2f3fdff5.jpg",
+    "static/media/neodgm.ttf": "/our-wedding/static/media/neodgm.ba23a68ae06680bee072.ttf",
     "static/media/53-VATA0383_수정본_5.jpg": "/our-wedding/static/media/53-VATA0383_수정본_5.a7dab9c48bae8861eb82.jpg",
     "static/media/4-VATA0508_2차수정본_16.jpg": "/our-wedding/static/media/4-VATA0508_2차수정본_16.785bfb9b686edad95831.jpg",
     "static/media/40-VATA0367_수정본_2.jpg": "/our-wedding/static/media/40-VATA0367_수정본_2.92ef88986fd69680c839.jpg",
@@ -113,7 +116,6 @@
     "static/media/58-VATA1261 컨페티 빈곳합성_3차수정본_4.jpg": "/our-wedding/static/media/58-VATA1261 컨페티 빈곳합성_3차수정본_4.75fdcf9378f0ca09ed2d.jpg",
     "static/media/48-VATA1192_수정본_5.jpg": "/our-wedding/static/media/48-VATA1192_수정본_5.ce936cc558b437b848fa.jpg",
     "static/media/19-VATA1142_2차수정본_5.jpg": "/our-wedding/static/media/19-VATA1142_2차수정본_5.2eb1c5051b4649d8ee83.jpg",
-    "static/media/23-VATA1899_수정본_1.jpg": "/our-wedding/static/media/23-VATA1899_수정본_1.3b55dcf854ca886f6903.jpg",
     "static/media/23-VATA1899_수정본_4.jpg": "/our-wedding/static/media/23-VATA1899_수정본_4.3b55dcf854ca886f6903.jpg",
     "static/media/47-VATA0455_수정본_4.jpg": "/our-wedding/static/media/47-VATA0455_수정본_4.4e6bf7e6cc3667d88bd6.jpg",
     "static/media/57-VATA0621_수정본_3.jpg": "/our-wedding/static/media/57-VATA0621_수정본_3.e5f00e6a6621b25ba3e2.jpg",
@@ -121,13 +123,15 @@
     "static/media/18-VATA1075_3차수정본_4.jpg": "/our-wedding/static/media/18-VATA1075_3차수정본_4.5c70290a6565acecd3aa.jpg",
     "static/media/27-VATA0643_2차수정본_5.jpg": "/our-wedding/static/media/27-VATA0643_2차수정본_5.e26bd55f04b16076f4de.jpg",
     "static/media/mapInner.jpg": "/our-wedding/static/media/mapInner.586368d83d6a7537ad2e.jpg",
+    "static/media/7.png": "/our-wedding/static/media/7.fcdcdbeadddc072bf3b7.png",
+    "static/media/we.png": "/our-wedding/static/media/we.584a977a2248e85f890c.png",
     "index.html": "/our-wedding/index.html",
-    "main.1d93a9cf.css.map": "/our-wedding/static/css/main.1d93a9cf.css.map",
-    "main.52216d29.js.map": "/our-wedding/static/js/main.52216d29.js.map",
+    "main.984e1ffa.css.map": "/our-wedding/static/css/main.984e1ffa.css.map",
+    "main.0d608285.js.map": "/our-wedding/static/js/main.0d608285.js.map",
     "453.c95b8273.chunk.js.map": "/our-wedding/static/js/453.c95b8273.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d93a9cf.css",
-    "static/js/main.52216d29.js"
+    "static/css/main.984e1ffa.css",
+    "static/js/main.0d608285.js"
   ]
 }
