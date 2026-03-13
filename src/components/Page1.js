@@ -221,9 +221,9 @@ function Page1() {
   };
 
   return (
-    <div className="max-w-full mx-auto bg-white h-full font-wedding text-[#4a4a4a] overflow-x-hidden relative">
+    <div className="max-w-full mx-auto bg-white font-wedding text-[#4a4a4a] overflow-x-hidden relative">
       {!hidePhaserSection && (
-        <section className="h-screen flex items-center justify-center bg-[#1a1a2e]">
+        <section className="h-[725px] flex items-center justify-center bg-[#1a1a2e]">
           <PhaserGame ref={phaserRef} currentActiveScene={onCurrentActiveScene} />
           {showButton && (
             <button
@@ -241,7 +241,7 @@ function Page1() {
             <img
               src={main1}
               alt="사진"
-              className="object-cover w-[110%] max-w-[500px] h-full rounded-lg"
+              className="object-cover w-[100%] max-w-[500px] h-[75%] rounded-lg"
             />
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -256,13 +256,13 @@ function Page1() {
       </section>
 
       {/* 메인 헤더 및 인사말 */}
-      <section className="h-full flex pt-1 px-5 pb-5 text-center bg-[#faf6ed] relative ">
-        <div className="max-w-[500px] mx-auto mt-16 h-full">
-          <h1 className="text-2xl text-black mb-3 font-normal font-neodgm">
+      <section className="h-[650px] flex  px-3 text-center bg-[#faf6ed] relative ">
+        <div className="max-w-[500px] mx-auto flex flex-col justify-center ">
+          <p className="text-2xl text-black mb-3 font-normal font-neodgm">
             우리 결혼해요💍
-          </h1>
+          </ p>
 
-          <p className="mt-10 text-[15px] leading-[2.2] text-[#5a5a5a] font-light whitespace-pre-line max-[480px]:text-sm font-neodgm">
+          <p className="mt-10 text-[15px] text-[#5a5a5a] font-light whitespace-pre-line max-[480px]:text-sm font-neodgm">
             스무 살, 친구로 만나<br />
             서른 살, 연인이 된 저희가<br />
             이제 서로의 곁에서<br />
@@ -296,10 +296,10 @@ function Page1() {
 
 
       {/* 사진 앨범 */}
-      <section className="h-full py-16 px-5 text-center bg-white">
-        <div className="max-w-[500px] mx-auto h-full">
+      <section className="py-16 px-5 text-center bg-white">
+        <div className="max-w-[500px] mx-auto">
           <h2 className="text-2xl text-black mb-1 font-normal font-neodgm">사진 앨범</h2>
-          <div className="py-1 w-full h-full">
+          <div className="py-1 w-full">
             <ImageGallery
               ref={galleryRef}
               items={galleryImages}
@@ -319,7 +319,7 @@ function Page1() {
       </section>
 
       {/* 장소 정보 */}
-      <section className="h-full flex items-center justify-center py-5 px-5 text-center overflow-hidden bg-[#faf6ed]">
+      <section className="h-[750px] flex items-center justify-center py-5 px-5 text-center overflow-hidden bg-[#faf6ed]">
         <div className="max-w-[500px] mx-auto  py-3 px-6 max-[480px]:py-8 max-[480px]:px-5">
           <h2 className="text-xl text-black mb-3 font-normal font-neodgm">오시는 길</h2>
           <div className="my-1">
@@ -373,7 +373,7 @@ function Page1() {
       </section>
 
       {/* 마음 전하실 곳 */}
-      <section className="h-full flex items-center justify-center py-16 px-8 bg-white">
+      <section className="h-[750px] flex items-center justify-center py-16 px-8 bg-white">
         <div className="max-w-[500px] w-full">
           <h3 className="text-2xl mb-2 text-center font-light tracking-[3px] text-black font-neodgm">
             마음 전하실 곳
@@ -521,7 +521,7 @@ function Page1() {
       </section>
 
       {/* 하단 장식 */}
-      <section className="h-full flex items-center justify-center py-12 px-8 pb-16 text-center bg-[#faf6ed]">
+      <section className="h-[750px] flex items-center justify-center py-12 px-8 pb-16 text-center bg-[#faf6ed]">
         <div>
           <img src={kiss} alt="장식" className="w-48 h-48 mx-auto mb-8 object-contain" />
           <div className="text-xl text-[#e8b4c8] mb-5 opacity-60 tracking-[10px]">❀ ❀ ❀</div>
