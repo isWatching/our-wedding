@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/our-wedding/static/css/main.8744c983.css",
-    "main.js": "/our-wedding/static/js/main.dbd5afc6.js",
+    "main.css": "/our-wedding/static/css/main.d06cde4f.css",
+    "main.js": "/our-wedding/static/js/main.e6b5987e.js",
     "static/js/453.c95b8273.chunk.js": "/our-wedding/static/js/453.c95b8273.chunk.js",
     "static/media/20-VATA1391_수정본.webp": "/our-wedding/static/media/20-VATA1391_수정본.856e1c201ef1ab32a8c3.webp",
     "static/media/2-VATA1349_2차수정본.webp": "/our-wedding/static/media/2-VATA1349_2차수정본.86132fd673aa3d84d2be.webp",
@@ -126,12 +126,12 @@
     "static/media/7.png": "/our-wedding/static/media/7.fcdcdbeadddc072bf3b7.png",
     "static/media/we.png": "/our-wedding/static/media/we.584a977a2248e85f890c.png",
     "index.html": "/our-wedding/index.html",
-    "main.8744c983.css.map": "/our-wedding/static/css/main.8744c983.css.map",
-    "main.dbd5afc6.js.map": "/our-wedding/static/js/main.dbd5afc6.js.map",
+    "main.d06cde4f.css.map": "/our-wedding/static/css/main.d06cde4f.css.map",
+    "main.e6b5987e.js.map": "/our-wedding/static/js/main.e6b5987e.js.map",
     "453.c95b8273.chunk.js.map": "/our-wedding/static/js/453.c95b8273.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8744c983.css",
-    "static/js/main.dbd5afc6.js"
+    "static/css/main.d06cde4f.css",
+    "static/js/main.e6b5987e.js"
   ]
 }
