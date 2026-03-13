@@ -317,7 +317,7 @@ function Page1() {
         </section>
 
         {/* 장소 정보 */}
-        <section className="h-screen flex items-center justify-center py-5 px-5 text-center overflow-y-auto bg-[#faf6ed]">
+        <section className="h-screen flex items-center justify-center py-5 px-5 text-center overflow-hidden bg-[#faf6ed]">
           <div className="max-w-[500px] mx-auto  py-3 px-6 max-[480px]:py-8 max-[480px]:px-5">
             <h2 className="text-xl text-black mb-3 font-normal font-neodgm">오시는 길</h2>
             <div className="my-1">
