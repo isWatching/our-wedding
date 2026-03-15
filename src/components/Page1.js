@@ -240,7 +240,7 @@ function Page1() {
         <div className="h-full flex flex-col justify-center">
           <div className="flex items-center justify-center w-full">
             <img
-              src={main2x}
+              src={main2}
               alt="사진"
               className="object-cover w-[100%] max-w-[500px] h-[75%] rounded-lg"
             />
