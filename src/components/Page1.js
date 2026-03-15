@@ -2,31 +2,13 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/image-gallery.css';
 import mapInner from '../mapInner.jpg';
-import weddingDay from '../change/weddingDay.png';
 import { PhaserGame } from './PhaserGame';
 
-import main1 from '../assets/main1.png';
 import main2 from '../assets/main2.png';
 import kiss from '../assets/Tilesheets/kiss.png';
 
-// webp 이미지 파일명 배열 (순서대로 정렬)
-const webpFiles = [
-  '34-VATA2130_수정본.webp',
-  '52-VATA0408_2차수정본.webp',
-  '54-VATA0974_2차수정본.webp',
-  '23-VATA1899_수정본.webp',
-  '21-VATA1431_수정본.webp',
-  '27-VATA0643_2차수정본.webp',
-  '32-VATA1670_수정본.webp',
-  '37-VATA0135_수정본.webp',
-  '14-VATA1727 파란하늘_2차수정본.webp',
-  '44-VATA2267_수정본.webp',
-  '29-VATA1992_수정본.webp',
-  '51-VATA2336_2차수정본.webp',
-];
-
-// jpg60 썸네일 파일명 매핑 (webp 파일명 -> jpg60 파일명)
-const jpg60Files = [
+// jpg 이미지 파일명 배열 (순서대로 정렬, src/press 폴더)
+const jpgFiles = [
   '34-VATA2130_수정본_1.jpg',
   '52-VATA0408_2차수정본_4.jpg',
   '54-VATA0974_2차수정본_6.jpg',
@@ -41,24 +23,13 @@ const jpg60Files = [
   '51-VATA2336_2차수정본_3.jpg',
 ];
 
-// 썸네일 이미지 경로를 미리 계산 (성능 최적화)
-const thumbnailPaths = jpg60Files.map((filename, index) => {
-  try {
-    return require(`../jpg60/${filename}`);
-  } catch (e) {
-    return require(`../webp/${webpFiles[index]}`);
-  }
-});
-
-// webp 원본 이미지 경로를 미리 계산 (성능 최적화)
-const webpPaths = webpFiles.map((filename) => {
-  return require(`../webp/${filename}`);
-});
+// jpg 원본/썸네일 이미지 경로 (press 폴더)
+const jpgPaths = jpgFiles.map((filename) => require(`../press/${filename}`));
 
 // react-image-gallery용 이미지 배열
-const galleryImages = thumbnailPaths.map((thumb, index) => ({
-  original: webpPaths[index],
-  thumbnail: thumb,
+const galleryImages = jpgPaths.map((path, index) => ({
+  original: path,
+  thumbnail: path,
   originalAlt: `사진 ${index + 1}`,
   thumbnailAlt: `썸네일 ${index + 1}`
 }));
@@ -90,8 +61,8 @@ function Page1() {
     setSelectedImage((prev) => {
       if (prev === null) return null;
       const newIndex = direction === 'prev'
-        ? (prev > 0 ? prev - 1 : webpFiles.length - 1)
-        : (prev < webpFiles.length - 1 ? prev + 1 : 0);
+        ? (prev > 0 ? prev - 1 : jpgFiles.length - 1)
+        : (prev < jpgFiles.length - 1 ? prev + 1 : 0);
 
       if (galleryRef.current) {
         galleryRef.current.slideToIndex(newIndex);
@@ -565,7 +536,7 @@ function Page1() {
                 transform: `translateX(-${selectedImage * 100}vw)`,
               }}
             >
-              {webpPaths.map((path, index) => (
+              {jpgPaths.map((path, index) => (
                 <div
                   key={index}
                   className="flex-shrink-0 w-screen h-full flex flex-col items-center justify-center px-5"
@@ -584,7 +555,7 @@ function Page1() {
 
           <div className="absolute bottom-4 left-0 right-0 z-[1001] flex justify-center">
             <div className="text-white/80 text-sm bg-black/50 py-2 px-4 rounded-full">
-              {selectedImage + 1} / {webpFiles.length}
+              {selectedImage + 1} / {jpgFiles.length}
             </div>
           </div>
         </div>
