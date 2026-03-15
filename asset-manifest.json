@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/our-wedding/static/css/main.d06cde4f.css",
-    "main.js": "/our-wedding/static/js/main.e6b5987e.js",
+    "main.js": "/our-wedding/static/js/main.42d4d07e.js",
     "static/js/453.c95b8273.chunk.js": "/our-wedding/static/js/453.c95b8273.chunk.js",
     "static/media/20-VATA1391_수정본.webp": "/our-wedding/static/media/20-VATA1391_수정본.856e1c201ef1ab32a8c3.webp",
     "static/media/2-VATA1349_2차수정본.webp": "/our-wedding/static/media/2-VATA1349_2차수정본.86132fd673aa3d84d2be.webp",
@@ -56,6 +56,7 @@
     "static/media/4-VATA0508_2차수정본.webp": "/our-wedding/static/media/4-VATA0508_2차수정본.e2b6b83011bd38662bfe.webp",
     "static/media/32-VATA1670_수정본.webp": "/our-wedding/static/media/32-VATA1670_수정본.0c5926f3a6cddce710a4.webp",
     "static/media/41-VATA0405_2차수정본.webp": "/our-wedding/static/media/41-VATA0405_2차수정본.12e8057871c6d7c2250d.webp",
+    "static/media/main2.png": "/our-wedding/static/media/main2.bc92fbfd89e68b6dc575.png",
     "static/media/main1.png": "/our-wedding/static/media/main1.3ebe4afee4e8be7a2269.png",
     "static/media/15-VATA1833 파란하늘_수정본_1.jpg": "/our-wedding/static/media/15-VATA1833 파란하늘_수정본_1.00e0acee6828a72e63e7.jpg",
     "static/media/52-VATA0408_2차수정본.webp": "/our-wedding/static/media/52-VATA0408_2차수정본.4fb580923c4b44ede262.webp",
@@ -127,11 +128,11 @@
     "static/media/we.png": "/our-wedding/static/media/we.584a977a2248e85f890c.png",
     "index.html": "/our-wedding/index.html",
     "main.d06cde4f.css.map": "/our-wedding/static/css/main.d06cde4f.css.map",
-    "main.e6b5987e.js.map": "/our-wedding/static/js/main.e6b5987e.js.map",
+    "main.42d4d07e.js.map": "/our-wedding/static/js/main.42d4d07e.js.map",
     "453.c95b8273.chunk.js.map": "/our-wedding/static/js/453.c95b8273.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d06cde4f.css",
-    "static/js/main.e6b5987e.js"
+    "static/js/main.42d4d07e.js"
   ]
 }
