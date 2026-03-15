@@ -6,6 +6,7 @@ import weddingDay from '../change/weddingDay.png';
 import { PhaserGame } from './PhaserGame';
 
 import main1 from '../assets/main1.png';
+import main2 from '../assets/main2.png';
 import kiss from '../assets/Tilesheets/kiss.png';
 
 // webp 이미지 파일명 배열 (순서대로 정렬)
@@ -239,7 +240,7 @@ function Page1() {
         <div className="h-full flex flex-col justify-center">
           <div className="flex items-center justify-center w-full">
             <img
-              src={main1}
+              src={main2x}
               alt="사진"
               className="object-cover w-[100%] max-w-[500px] h-[75%] rounded-lg"
             />
